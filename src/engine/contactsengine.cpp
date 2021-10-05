@@ -262,7 +262,6 @@ public:
         QList<QContact> contacts;      {
             QMutexLocker locker(mutex);
             contacts = m_contacts;
-            m_contacts.clear();
         }
         QContactManagerEngine::updateContactFetchRequest(
                 m_request,
